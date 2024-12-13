@@ -1,0 +1,32 @@
+import React from 'react';
+import '../styles/Form';
+
+const FormComponent = ({ title, fields, buttonText, onSubmit }) => {
+  return (
+    <div className="form-container">
+      <form className="form" onSubmit={onSubmit}>
+        <h2 className="form-title">{title}</h2>
+        {fields.map((field, index) => (
+          <div className="form-field" key={index}>
+            <label htmlFor={field.id} className="form-label">
+              {field.label}
+            </label>
+            <input
+              type={field.type}
+              id={field.id}
+              name={field.name}
+              placeholder={field.placeholder}
+              required={field.required}
+              className="form-input"
+            />
+          </div>
+        ))}
+        <button type="submit" className="form-button">
+          {buttonText}
+        </button>
+      </form>
+    </div>
+  );
+};
+
+export default FormComponent;
