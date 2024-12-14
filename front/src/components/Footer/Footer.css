@@ -1,0 +1,38 @@
+
+
+.footer {
+    padding: 50px 20px;
+    background-color:  linear-gradient(135deg, #ffffff, #875ba5);
+    color: white;
+    text-align: center;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-family: 'Arial', sans-serif;;
+    
+  }
+
+  
+  .footer a {
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+  }
+  
+  .footer a:hover {
+    color: #f3a1e3; 
+  }
+body {
+    display: flex
+;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffffff, #875ba5);
+    color: #fff;
+}
